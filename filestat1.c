@@ -43,4 +43,3 @@ void filestat1(void)
         printf("hour : %d \n", time1->tm_hour);
         printf("min : %d \n", time1->tm_min);
 }
-
