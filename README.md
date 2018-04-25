@@ -8,4 +8,4 @@
 
 2017202065 BitNaKm
 
-2017202032 Soyoooon
+2017202032 Soyooooon
