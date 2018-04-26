@@ -120,7 +120,6 @@ void timecmp(void)
                 else
                          printf("same tiem\n");
 
-        }
-
+	 }
 }
                  
