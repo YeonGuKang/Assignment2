@@ -30,10 +30,20 @@ int main(void)
 
 void filestat1(void)
 {
+        struct stat buf1;
+        struct tm* time1;
+
+        stat("text1", &buf1);
+        time1 = localtime(&buf1.st_mtime);
 }
 
 void filestat2(void)
 {
+        struct stat buf2;
+        struct tm* time2;
+
+        stat("text1", &buf2);
+        time2 = localtime(&buf2.st_mtime);
 }
 
 void filetime1(void)
