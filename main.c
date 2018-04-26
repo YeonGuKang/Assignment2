@@ -86,9 +86,41 @@ void blockcmp(void)
 
 void datecmp(void)
 {
+
+	if((time1->tm_mon+1)>(time2->tm_mon+1))
+                printf("text2 is early\n");
+        else if ((time1->tm_mon+1)<(time2->tm_mon+1))
+                printf("teex1 is early\n");
+        else if ((time1->tm_mon+1)==(time2->tm_mon+1))
+        {
+                if((time1->tm_mday)>(time2->tm_mday))
+                         printf("text2 is early\n");
+                else if ((time1->tm_mday)<(time2->tm_mday))
+                         printf("teex1 is early\n");
+                else
+                         printf("same tiem\n");
+
+        }
+
+
 }
 
 void timecmp(void)
 {
+	if((time1->tm_hour)>(time2->tm_hour))
+                printf("text2 is early\n");
+        else if ((time1->tm_hour)<(time2->tm_hour))
+                printf("teex1 is early\n");
+        else if ((time1->tm_hour)==(time2->tm_hour))
+        {
+                if((time1->tm_min)>(time2->tm_min))
+                         printf("text2 is early\n");
+                else if ((time1->tm_min)<(time2->tm_min))
+                         printf("teex1 is early\n");
+                else
+                         printf("same tiem\n");
+
+        }
+
 }
                  
