@@ -30,10 +30,14 @@ int main(void)
 
 void filestat1(void)
 {
+        struct stat buf1;
+        stat("text1", &buf1);
 }
 
 void filestat2(void)
 {
+        struct stat buf2;
+        stat("text2", &buf2);
 }
 
 void filetime1(void)
