@@ -30,28 +30,22 @@ int main(void)
 
 void filestat1(void)
 {
-        struct stat buf1;
-        stat("text1", &buf1);
+       	stat("text1", &stat1);
 }
 
 void filestat2(void)
 {
-        struct stat buf2;
-        stat("text2", &buf2);
+        stat("text2", &stat2);
 }
 
 void filetime1(void)
 {
-	struct stat buf1;
-	struct tm* time1;
-	time1 = localtime(&buf1.st_mtime);
+	time1 = localtime(&stat1.st_mtime);
 }
 
 void filetime2(void)
 {
-	struct stat buf2;
-	struct tm* time2;
-	time2 = localtime(&buf2.st_mtime);
+	time2 = localtime(&stat2.st_mtime);
 }
 
 void sizecmp(void)
