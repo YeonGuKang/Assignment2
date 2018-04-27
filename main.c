@@ -52,7 +52,7 @@ void sizecmp(void)
 {
 	printf("size compare\n");
 	
-	if ((int)stat1.st_size>(int)stat2.st_size) printf(" text1 is bigger\n");
+	if ((int)stat1.st_size>(int)stat2.st_size) printf("text1 is bigger\n");
 	else if ((int)stat1.st_size<(int)stat2.st_size) printf("text2 is bigger\n");
 	else printf("sizes are equal\n");
 
@@ -72,7 +72,7 @@ void blockcmp(void)
 
 void datecmp(void)
 {
-
+	printf("date compare\n");
 	if((time1->tm_mon+1)>(time2->tm_mon+1))
                 printf("text2 is early\n");
         else if ((time1->tm_mon+1)<(time2->tm_mon+1))
@@ -93,6 +93,7 @@ void datecmp(void)
 
 void timecmp(void)
 {
+	printf("time compare\n");
 	if((time1->tm_hour)>(time2->tm_hour))
                 printf("text2 is early\n");
         else if ((time1->tm_hour)<(time2->tm_hour))
@@ -104,7 +105,7 @@ void timecmp(void)
                 else if ((time1->tm_min)<(time2->tm_min))
                          printf("text1 is early\n");
                 else
-                         printf("same tiem\n");
+                         printf("same time\n");
 
 	 }
 }
